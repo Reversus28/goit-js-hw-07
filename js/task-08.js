@@ -3,7 +3,7 @@ const btnCreateEl = document.querySelector('[data-action="render"]');
 const btnDeleteEl = document.querySelector('[data-action="destroy"]');
 const divListEL = document.querySelector('#boxes');
 
-const generateDivEl = () => {
+const createBoxes = () => {
    if (inputNumberEl.value > 0) {
       for (let i = 0; i < inputNumberEl.value ; i += 1) {
          const divItemEl = document.createElement("div");
@@ -21,7 +21,7 @@ const deleteDivEl = () => {
    document.querySelectorAll('#boxes div').forEach(div => div.remove())
 };
 
-btnCreateEl.addEventListener('click', generateDivEl);
+btnCreateEl.addEventListener('click', createBoxes);
 btnDeleteEl.addEventListener('click',  deleteDivEl)
  
 
