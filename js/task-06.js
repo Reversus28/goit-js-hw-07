@@ -9,6 +9,7 @@ const onInputFocus = () => {
    if (inputEl.value.length < 6 || inputEl.value.length > 6) {
    inputEl.classList.remove('valid');
       inputEl.classList.add('invalid'); 
+      
    }
    if (inputEl.value.length===0) {  inputEl.classList.remove('invalid'); };
  };

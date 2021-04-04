@@ -7,13 +7,14 @@ const generateDivEl = () => {
    if (inputNumberEl.value > 0) {
       for (let i = 0; i < inputNumberEl.value ; i += 1) {
          const divItemEl = document.createElement("div");
+         const red = Math.floor(Math.random() * 255);
+         const green = Math.floor(Math.random() * 255);
+         const blue = Math.floor(Math.random() * 255);
  
-         divItemEl.style.cssText = `color: blue; background-color:#${+Math.floor(Math.random() * (8999 )) + 1000};width:${30 + i * 10}px; height:${30 + i * 10}px;`;
+         divItemEl.style.cssText = `color: blue; background-color: rgb(${red} ${green} ${blue}); width:${30 + i * 10}px; height:${30 + i * 10}px;`;
          divListEL.append(divItemEl);
-         
       }
    }
-  
 };
 
 const deleteDivEl = () => {

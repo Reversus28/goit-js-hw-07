@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Задание 4</title>
     <style>
       body {
@@ -16,12 +17,35 @@
     </style>
   </head>
   <body>
-    <p><a href="index.html">На главную</a></p>
-    <div id="counter">
-      <button type="button" data-action="decrement">-1</button>
-      <span id="value">0</span>
-      <button type="button" data-action="increment">+1</button>
-    </div>
+    <section class="task-04">
+      <div class="container">
+        <ul class="top">
+          <li class="article">Задание 4</li>
+          <li class="logo">
+            <span class="js">JS</span>
+            <span class="home-work">home work 07</span>
+          </li>
+        </ul>
+
+        <div id="counter">
+          <button type="button" data-action="decrement">-1</button>
+          <span id="value">0</span>
+          <button type="button" data-action="increment">+1</button>
+        </div>
+
+        <ul class="list">
+          <li class="nav-item active">
+            <a class="link" href="task-03.html">Задание 3</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">На главную</a>
+          </li>
+          <li class="nav-item">
+            <a class="link" href="./task-05.html">Задание 5</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script src="js/task-04.js" type="module"></script>
   </body>
 </html>

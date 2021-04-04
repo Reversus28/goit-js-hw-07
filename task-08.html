@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Задание 8</title>
     <style>
       body {
@@ -14,15 +15,33 @@
     </style>
   </head>
   <body>
-    <p><a href="index.html">На главную</a></p>
-    <div id="controls">
-      <input type="number" min="0" max="100" step="1" />
-      <button type="button" data-action="render">Создать</button>
-      <button type="button" data-action="destroy">Очистить</button>
-    </div>
+    <section class="task-08">
+      <div class="container">
+        <ul class="top">
+          <li class="article">Задание 8</li>
+          <li class="logo">
+            <span class="js">JS</span>
+            <span class="home-work">home work 07</span>
+          </li>
+        </ul>
 
-    <div id="boxes"></div>
+        <div id="controls">
+          <input type="number" min="0" max="100" step="1" />
+          <button type="button" data-action="render">Создать</button>
+          <button type="button" data-action="destroy">Очистить</button>
+        </div>
 
+        <div id="boxes"></div>
+        <ul class="list">
+          <li class="nav-item active">
+            <a class="link" href="task-07.html">Задание 7</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html">На главную</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script src="js/task-08.js" type="module"></script>
   </body>
 </html>
