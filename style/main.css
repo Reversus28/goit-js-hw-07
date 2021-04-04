@@ -1,0 +1,49 @@
+img {
+  display: block;
+  width: 100%;
+}
+
+/* task-01 */
+
+/* task-01 end*/
+
+/* task-03 */
+/* task-03 end*/
+/* task-03 */
+/* task-03 end*/
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100vw;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#gallery img {
+  height: 280px;
+  background-size: contain;
+}
+
+/* task-03 end*/
+
+/* task-06*/
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+/* task-06 end*/
